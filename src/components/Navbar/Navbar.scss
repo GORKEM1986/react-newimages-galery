@@ -1,0 +1,37 @@
+@import "../../scss/variables";
+
+.navbar {
+  font-family: "Rubik Distressed", cursive;
+  background-color: $olive;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  position: fixed;
+  z-index: 100%;
+  width: 100%;
+  top: 0;
+
+  .links {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: flex-end;
+    gap: 2%;
+
+    a {
+      color: $bg;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 5px;
+      padding: 0.5rem;
+      &:hover {
+        background-color: $neon;
+        color: $cardNavBgColor;
+      }
+    }
+  }
+}
+
+.log {
+  border-radius: 50%;
+}

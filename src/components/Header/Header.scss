@@ -1,0 +1,53 @@
+@import "../../scss/variables";
+
+.header {
+  font-family: "Rubik Distressed", cursive;
+  display: block;
+
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  // justify-content: space-between;
+  // align-items: center;
+  text-align: center;
+}
+
+.text-shadow {
+  color: $darkGreen;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 0.2rem;
+  animation: flicker 0.5s ease-in-out infinite alternate;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    color: $navyBlue;
+    cursor: pointer;
+  }
+}
+.text {
+  font-family: "Rubik Distressed", cursive;
+  color: $bgc;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 0.2rem;
+  animation: flicker 0.5s ease-in-out infinite alternate;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    color: $cardNavBgColor;
+    cursor: pointer;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.5;
+    text-shadow: 2px 2px 10px $neon;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 2px 2px 10px $cardNavBgColor;
+  }
+}
